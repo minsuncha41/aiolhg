@@ -99,6 +99,7 @@ button {
 .container {
   max-width: var(--container-w);
   margin: 0 auto;
+  transition: max-width .5s ease;
   padding-inline: var(--gutter);
 }
 
@@ -248,6 +249,8 @@ button {
 
 .site-header.scrolled .container {
   max-width: 100%;
+  transition: max-width .5s ease;
+
 }
 
 .brand-mark {
