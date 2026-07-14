@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>야르한끼 | 든든하게 한 끼, 편하게 한 번 더</title>
+  <meta name="description" content="냉면·돈까스 세트를 대표 메뉴로 하는 브랜드, 야르한끼. 맛은 진심으로, 분위기는 재밌게.">
+  <meta property="og:title" content="야르한끼 | 든든하게 한 끼">
+  <meta property="og:description" content="냉면·돈까스 세트 전문 브랜드 야르한끼">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="/images/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Song+Myung&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <a href="#top" class="brand-mark">
+        <img src="/images/logo.png" alt="야르한끼 로고">
+        <span class="word">야르한끼<small>YAREUN HANKI</small></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#story">브랜드</a></li>
+          <li><a href="#signature">대표메뉴</a></li>
+          <li><a href="#menu">전체메뉴</a></li>
+          <li><a href="#gallery">갤러리</a></li>
+          <li><a href="#reviews">후기</a></li>
+          <li><a href="#visit">오시는 길</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a href="#visit" class="btn btn-outline">오시는 길</a>
+        <a href="#menu" class="btn btn-primary">메뉴 보기</a>
+        <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- 광고 팝업 -->
+    <div id="pop1" class="popup-overlay">
+      <div class="popup-container">
+        <button class="popup-close" id="popupClose">
+          ✕
+        </button>
+        <div class="popup-content">
+          <h2>야르한끼 바삭한 돈까스!</h2>
+          <img src="/images/msimg8.jpeg" alt="">
+
+          <p>
+            오픈 기념 전 메뉴 할인 이벤트!
+            야르한 한 끼를 특별한 가격으로 만나보세요!
+          </p>
+
+          <a href="#menu" class="popup-button" id="popupClose1">
+            메뉴 보러가기
+          </a>
+        </div>
+
+        <div class="popup-footer">
+          <label>
+            <input type="checkbox" id="hideToday">
+            오늘 하루 보지 않기
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero-media">
+        <video id="heroVideo" poster="images/snl.png" muted controls loop playsinline preload="none">
+          <source src="videos/olhg.mp4" type="video/mp4">
+        </video>
+        <!-- <img id="heroImgFallback" src="images/hero-bg.jpg" alt="야르한끼 냉면·돈까스 세트" style="display:none;"> -->
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">NAENGMYEON &amp; DONKATSU SET</p>
+        <h1 class="hero-title">
+          <span class="rot-wrap" id="heroRotate">야르! 든든하게 한 끼!</span>
+        </h1>
+        <p class="hero-sub">맛은 진심으로, 분위기는 재밌게. 냉면·돈까스 세트를 대표 메뉴로,
+          기본에 충실한 맛과 편안한 분위기를 한 그릇에 담았습니다.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-light">메뉴 둘러보기 <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#visit" class="btn btn-outline"
+            style="border-color:rgba(247,242,232,.5); color:var(--color-cream);">매장 안내</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <svg viewBox="0 0 26 40" fill="none">
+          <rect x="1" y="1" width="24" height="38" rx="12" stroke="currentColor" stroke-width="1.4" />
+          <line class="line" x1="13" y1="9" x2="13" y2="20" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" />
+        </svg>
+        SCROLL
+      </div>
+
+      <!-- <div class="hero-stats">
+        <div><strong>1,000+</strong><span>월 평균 방문 고객</span></div>
+        <div><strong>4.8 / 5</strong><span>네이버 리뷰 평균 평점</span></div>
+        <div><strong>2가지</strong><span>세트 · 단품 선택 가능</span></div>
+        <div><strong>15분</strong><span>표준화된 평균 조리 시간</span></div>
+      </div> -->
+    </section>
+
+    <!-- ================= 브랜드 소개 ================= -->
+    <section class="brand-story" id="story">
+      <div class="container">
+        <div class="brand-story-media" data-reveal>
+          <img src="images/logo.png" alt="야르한끼 주방 풍경">
+          <div class="tag-float"><span></span>오픈 키친 · 매일 아침 준비</div>
+        </div>
+
+        <div class="brand-story-copy" data-reveal data-reveal-delay="2">
+          <p class="eyebrow">Brand Story</p>
+          <h2 class="section-title">맛은 진심으로,<br>분위기는 재밌게.</h2>
+          <p class="section-lead">
+            야르한끼는 냉면·돈까스 세트를 중심에 둔 브랜드입니다. 맛과 품질은 기본으로 지키고,
+            SNS 안에서는 그때그때의 유행을 가볍게 받아들입니다. 브랜드 자체는 오래도록 변하지 않는
+            안정적인 인상을 유지하고, 오직 콘텐츠만 시대에 맞춰 자연스럽게 옷을 갈아입습니다.
+          </p>
+          <p>주 고객은 20~30대 대학생과 직장인이지만, 혼밥 손님부터 친구 모임, 커플, 가족까지
+            누구나 부담 없이 들를 수 있는 곳을 만들고자 합니다. 손님이 문을 나서며
+            '다음에도 여기 오자'는 생각이 들게 만드는 것, 그것이 야르한끼가 매 끼니마다 지키는 약속입니다.</p>
+
+          <ul class="keyword-row">
+            <li>#든든함</li>
+            <li>#편안함</li>
+            <li>#청결함</li>
+            <li>#재미</li>
+            <li>#공감</li>
+            <li>#재방문</li>
+          </ul>
+
+          <p class="brand-story-quote">"결국 또 냉면,<br>오늘도 든든하게."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 대표 메뉴 (Bento) ================= -->
+    <section class="signature-menu" id="signature">
+      <div class="container">
+        <div class="head-row" data-reveal>
+          <div>
+            <p class="eyebrow">Signature Menu</p>
+            <h2 class="section-title">한 그릇에 담은<br>야르한끼의 대표 메뉴</h2>
+          </div>
+          <p class="section-lead">회전율과 만족도를 함께 잡은 세트 구성.
+            메뉴 수를 늘리는 대신, 품질을 끝까지 지킬 수 있는 만큼만 정성껏 준비합니다.</p>
+        </div>
+
+        <div class="bento" data-reveal>
+          <article class="bento-card b-main">
+            <img src="images/msimg9.jpeg" alt="냉면·돈까스 세트">
+            <span class="price">12,900원</span>
+            <div class="info">
+              <p class="name">냉면·돈까스 세트</p>
+              <p class="desc">시원한 냉면과 바삭한 돈까스를 한 상에 — 야르한끼의 대표 메뉴</p>
+            </div>
+          </article>
+          <article class="bento-card b-side1">
+            <img src="images/msimg5.jpeg" alt="냉면 단품">
+            <span class="price">8,500원</span>
+            <div class="info">
+              <p class="name">냉면 단품</p>
+            </div>
+          </article>
+          <article class="bento-card b-side2">
+            <img src="images/msimg8.jpeg" alt="돈까스 단품">
+            <span class="price">9,500원</span>
+            <div class="info">
+              <p class="name">돈까스 단품</p>
+            </div>
+          </article>
+          <article class="bento-card b-wide">
+            <img src="images/msimg7.jpeg" alt="만두 사이드 메뉴">
+            <span class="price">5,000원</span>
+            <div class="info">
+              <p class="name">만두</p>
+              <p class="desc">사이드 메뉴</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 전체 메뉴 ================= -->
+    <section class="full-menu" id="menu">
+      <div class="container">
+        <div data-reveal>
+          <p class="eyebrow">Full Menu</p>
+          <h2 class="section-title">전체 메뉴</h2>
+          <p class="section-lead">많이 만들지 않습니다. 대신 품질을 관리할 수 있는 만큼만, 정직하게 준비합니다.</p>
+        </div>
+
+        <div class="menu-tabs" role="tablist" data-reveal>
+          <button class="menu-tab is-active" data-target="panel-set" role="tab" aria-selected="true">세트</button>
+          <button class="menu-tab" data-target="panel-single" role="tab" aria-selected="false">단품</button>
+          <button class="menu-tab" data-target="panel-side" role="tab" aria-selected="false">사이드 · 음료</button>
+        </div>
+
+        <div class="menu-panel is-active" id="panel-set">
+          <article class="menu-item">
+            <span class="badge">대표 메뉴</span>
+            <div class="menu-item-img"> <img src="images/msimg9.jpeg" alt="냉면·돈까스 세트">
+            </div>
+            <div class="menu-item-row"><span class="name">냉면·돈까스 세트</span><span class="price">12,900원</span></div>
+            <p class="desc">시원한 육수의 냉면과 바삭하게 튀긴 돈까스를 함께 즐기는 야르한끼의 시그니처 구성입니다.</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-img"><img src="images/msimg6.jpeg" alt="곱빼기 세트"></div>
+            <div class="menu-item-row"><span class="name">곱빼기 세트</span><span class="price">14,900원</span></div>
+            <p class="desc">넉넉하게 든든한 한 끼가 필요한 날을 위한 곱빼기 구성입니다.</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-img"><img src="images/msimg4.jpeg" alt="치즈 돈까스 세트"></div>
+            <div class="menu-item-row"><span class="name">치즈 돈까스 세트</span><span class="price">13,900원</span></div>
+            <p class="desc">고소한 치즈를 더한 돈까스와 시원한 냉면의 조합입니다.</p>
+          </article>
+        </div>
+
+        <div class="menu-panel" id="panel-single">
+          <article class="menu-item">
+            <div class="menu-item-img"><img src="images/msimg5.jpeg" alt="냉면 단품"></div>
+            <div class="menu-item-row"><span class="name"> 육전 냉면</span><span class="price">8,500원</span></div>
+            <p class="desc">깔끔하고 시원한 육수로 부담 없이 즐기고 육전이들어가 더 맛있는 냉면 단품입니다.</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-img"><img src="images/msimg8.jpeg" alt="돈까스 단품"></div>
+            <div class="menu-item-row"><span class="name">돈까스</span><span class="price">9,500원</span></div>
+            <p class="desc">바삭한 튀김옷과 촉촉한 속살, 든든한 한 끼가 되는 돈까스 단품입니다.</p>
+          </article>
+        </div>
+
+        <div class="menu-panel" id="panel-side">
+          <article class="menu-item">
+            <div class="menu-item-img"><img src="images/msimg7.jpeg" alt="만두"></div>
+            <div class="menu-item-row"><span class="name">만두</span><span class="price">5,000원</span></div>
+            <p class="desc">한 끼를 더 든든하게 채워주는 사이드 메뉴입니다.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 시그니처 스토리 (풀블리드) ================= -->
+    <section class="signature-story">
+      <img class="sig-mark" src="icons/mark.svg" alt="" aria-hidden="true">
+      <div class="container">
+        <div class="signature-story-media" data-reveal>
+          <video id="heroVideo" poster="images/snl.png" muted controls loop playsinline preload="none">
+            <source src="videos/olhg.mp4" type="video/mp4">
+          </video>
+
+          <!-- <img src="images/msimg1.jpeg" alt="육수를 붓는 장면"> -->
+        </div>
+        <div class="signature-story-copy" data-reveal data-reveal-delay="2">
+          <p class="eyebrow">Behind the Bowl</p>
+          <h2 class="section-title">한 그릇이 완성되는<br>가장 만족스러운 순간</h2>
+          <p class="section-lead">육수를 붓는 순간, 면을 들어 올리는 순간, 돈까스를 써는 순간.
+            짧지만 확실한 이 장면들이 야르한끼 콘텐츠의 시작입니다.</p>
+          <a href="#gallery" class="btn btn-light" style="margin-top:26px;">더 많은 순간 보기 <i
+              class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 브랜드 강점 ================= -->
+    <section class="strengths">
+      <div class="container">
+        <div data-reveal>
+          <p class="eyebrow">Why Yareun Hanki</p>
+          <h2 class="section-title">야르한끼가 다른 이유</h2>
+        </div>
+
+        <div class="strengths-grid" data-reveal>
+          <div class="strength-card">
+            <p class="num">Standard</p>
+            <h3>표준화된 레시피</h3>
+            <p>맛의 일관성을 위해 레시피와 조리 시간을 표준화하여, 언제 방문해도 같은 맛을 약속합니다.</p>
+          </div>
+          <div class="strength-card">
+            <p class="num">Open Kitchen</p>
+            <h3>오픈 키친</h3>
+            <p>주방을 그대로 열어 조리 과정을 보여드립니다. 청결함은 눈으로 확인하는 것이 가장 확실합니다.</p>
+          </div>
+          <div class="strength-card">
+            <p class="num">Every Guest</p>
+            <h3>혼밥부터 가족까지</h3>
+            <p>혼밥석과 2·4인 테이블을 균형 있게 배치해 어떤 구성의 방문객도 편하게 머물 수 있습니다.</p>
+          </div>
+          <div class="strength-card">
+            <p class="num">Fast &amp; Kind</p>
+            <h3>빠르고 친절하게</h3>
+            <p>입장 후 1분 이내 인사, 빠른 제공, 친절한 응대. 점심시간에도 흔들리지 않는 기본기입니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 이벤트 및 프로모션 ================= -->
+    <section class="promo">
+      <div class="container">
+        <div data-reveal>
+          <p class="eyebrow">Promotion</p>
+          <h2 class="section-title">지금 진행 중인 이벤트</h2>
+        </div>
+
+        <div class="promo-grid" data-reveal>
+          <article class="promo-card">
+            <span class="d-day">오픈 기념</span>
+            <h3>세트 메뉴 10% 할인</h3>
+            <p>냉면·돈까스 세트를 주문하시는 모든 고객님께 10% 할인을 제공합니다.</p>
+            <p class="period">기간 · 오픈일로부터 4주간</p>
+          </article>
+          <article class="promo-card">
+            <span class="d-day">학생 전용</span>
+            <h3>학생증 제시 시 음료 증정</h3>
+            <p>학생증을 보여주시면 음료 한 잔을 무료로 제공해 드립니다.</p>
+            <p class="period">기간 · 상시 진행</p>
+          </article>
+          <article class="promo-card">
+            <span class="d-day">재방문 혜택</span>
+            <h3>스탬프 적립 이벤트</h3>
+            <p>방문 시마다 스탬프를 적립하고, 10개를 모으면 세트 메뉴 1회를 무료로 드립니다.</p>
+            <p class="period">기간 · 상시 진행</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 갤러리 ================= -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div data-reveal>
+          <p class="eyebrow">Gallery</p>
+          <h2 class="section-title">야르한끼의 순간들</h2>
+          <p class="section-lead">매장과 음식, 그리고 손님들의 자연스러운 순간을 담았습니다.</p>
+        </div>
+
+        <div class="masonry" data-reveal id="galleryMasonry">
+          <img src="images/msimg2.jpeg" alt="갤러리 이미지 1" loading="lazy">
+          <img src="images/msimg3.jpeg" alt="갤러리 이미지 2" loading="lazy">
+          <img src="images/msimg8.jpeg" alt="갤러리 이미지 3" loading="lazy">
+          <img src="images/msimg9.jpeg" alt="갤러리 이미지 4" loading="lazy">
+          <img src="images/msimg6.jpeg" alt="갤러리 이미지 5" loading="lazy">
+          <img src="images/msimg7.jpeg" alt="갤러리 이미지 6" loading="lazy">
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 후기 ================= -->
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div data-reveal>
+          <p class="eyebrow">Reviews</p>
+          <h2 class="section-title">다녀가신 분들의 이야기</h2>
+          <p class="section-lead">과장 없이, 실제 방문 후기 그대로 전해드립니다.</p>
+        </div>
+
+        <div class="review-track-wrap" data-reveal>
+          <div class="review-track" id="reviewTrack">
+            <article class="review-card">
+              <p class="review-stars">★★★★★</p>
+              <p class="txt">혼밥하기 딱 좋은 자리 배치라 편하게 먹고 왔어요. 냉면 육수가 자극적이지 않고 깔끔했습니다.</p>
+              <div class="review-user"><img src="images/review-avatar-1.jpg" alt="">
+                <div><strong>김민지</strong><span>네이버 리뷰</span></div>
+              </div>
+            </article>
+            <article class="review-card">
+              <p class="review-stars">★★★★★</p>
+              <p class="txt">돈까스가 정말 바삭했어요. 세트 가격도 부담 없어서 학생들끼리 자주 갈 것 같습니다.</p>
+              <div class="review-user"><img src="images/review-avatar-2.jpg" alt="">
+                <div><strong>이준호</strong><span>영수증 리뷰</span></div>
+              </div>
+            </article>
+            <article class="review-card">
+              <p class="review-stars">★★★★☆</p>
+              <p class="txt">회전이 빠른데도 응대가 친절해서 좋았어요. 점심시간에 방문했는데 오래 기다리지 않았습니다.</p>
+              <div class="review-user"><img src="images/review-avatar-3.jpg" alt="">
+                <div><strong>박서연</strong><span>네이버 리뷰</span></div>
+              </div>
+            </article>
+            <article class="review-card">
+              <p class="review-stars">★★★★★</p>
+              <p class="txt">가족 모임으로 방문했는데 테이블 간격도 넉넉하고 매장이 깔끔해서 다음에 또 오려고요.</p>
+              <div class="review-user"><img src="images/review-avatar-4.jpg" alt="">
+                <div><strong>정하늘</strong><span>인스타그램</span></div>
+              </div>
+            </article>
+          </div>
+          <div class="review-nav">
+            <button id="reviewPrev" aria-label="이전 후기"><i class="fa-solid fa-arrow-left"></i></button>
+            <button id="reviewNext" aria-label="다음 후기"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="faq">
+      <div class="container">
+        <div data-reveal>
+          <p class="eyebrow">FAQ</p>
+          <h2 class="section-title">자주 묻는 질문</h2>
+        </div>
+
+        <div class="faq-list" data-reveal>
+          <div class="faq-item">
+            <button class="faq-q"><span>포장 및 배달도 가능한가요?</span><span class="plus"></span></button>
+            <div class="faq-a">
+              <p>매장 포장은 언제든 가능하며, 배달앱을 통한 배달 주문도 함께 운영하고 있습니다.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q"><span>혼밥으로 방문해도 괜찮을까요?</span><span class="plus"></span></button>
+            <div class="faq-a">
+              <p>물론입니다. 혼밥 손님을 위한 좌석을 별도로 마련해 두어 편하게 식사하실 수 있습니다.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q"><span>주차는 가능한가요?</span><span class="plus"></span></button>
+            <div class="faq-a">
+              <p>매장 인근 공영주차장 이용이 가능하며, 자세한 안내는 매장으로 문의해 주세요.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q"><span>단체 예약도 가능한가요?</span><span class="plus"></span></button>
+            <div class="faq-a">
+              <p>4인 이상 단체석 예약이 가능합니다. 전화로 사전 예약해 주시면 자리를 준비해 드립니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 오시는 길 ================= -->
+    <section class="visit" id="visit">
+      <div class="container">
+        <div class="visit-map" data-reveal>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357b62d4a5b30547%3A0xd85aa80889db3c82!2z67aA7LKc!5e0!3m2!1sko!2skr!4v1783670392920!5m2!1sko!2skr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <!-- <img src="images/map-placeholder.jpg" alt="야르한끼 매장 위치 지도"> -->
+        </div>
+
+        <div data-reveal data-reveal-delay="2">
+          <p class="eyebrow">Visit Us</p>
+          <h2 class="section-title">오시는 길</h2>
+
+          <ul class="info-list">
+            <li>
+              <span class="ico"><i class="fa-solid fa-location-dot"></i></span>
+              <div><strong>주소</strong><span>서울特別市 (매장 주소를 입력해 주세요)</span></div>
+            </li>
+            <li>
+              <span class="ico"><i class="fa-solid fa-clock"></i></span>
+              <div><strong>영업시간</strong><span>매일 11:00 – 21:00 (브레이크타임 15:00–17:00)</span></div>
+            </li>
+            <li>
+              <span class="ico"><i class="fa-solid fa-phone"></i></span>
+              <div><strong>전화</strong><span>0000-0000</span></div>
+            </li>
+            <li>
+              <span class="ico"><i class="fa-solid fa-envelope"></i></span>
+              <div><strong>이메일</strong><span>hello@yareunhanki.com</span></div>
+            </li>
+          </ul>
+
+          <div class="sns-row">
+            <a href="#" aria-label="인스타그램"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="유튜브"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="네이버 블로그"><i class="fa-solid fa-blog"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <div class="footer-brand">
+          <img src="/images/logo.png" alt="야르한끼 로고">
+          <span>야르한끼</span>
+        </div>
+        <p class="footer-tagline">든든하게 한 끼, 편하게 한 번 더.<br>냉면·돈까스 세트 전문 브랜드 야르한끼</p>
+      </div>
+      <div>
+        <ul class="info-list" style="gap:10px;">
+          <li><span>대표 (김야르)</span></li>
+          <li><span>사업자등록번호 123-12-12345</span></li>
+          <li><span>서울 (야르시 야르구 야르동 12-3 7)</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; 2026 야르한끼(Yareun Hanki). All rights reserved.</span>
+      <span>맛으로 신뢰를 만들고, 콘텐츠로 기억에 남는 브랜드.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
