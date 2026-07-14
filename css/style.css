@@ -754,7 +754,9 @@ button {
 }
 
 .menu-item-img {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
+
   height: 300px;
   border-radius: var(--radius-m);
   overflow: hidden;
@@ -1453,6 +1455,12 @@ button {
 
   .hero-stats {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .hero-content {
+    padding: 25px;
+    border-radius: 40px;
   }
 
   .masonry {
