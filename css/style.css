@@ -20,8 +20,10 @@
   --color-border: rgba(34, 34, 34, 0.1);
 
   /* Typography */
-  --font-display: 'Song Myung', 'Noto Serif KR', serif;
-  --font-body: 'Noto Sans KR', -apple-system, sans-serif;
+  /* --font-display: 'Song Myung', 'Noto Serif KR', serif;
+  --font-body: 'Noto Sans KR', -apple-system, sans-serif; */
+  --font-display: 'Noto Serif KR', serif;
+  --font-body: 'Noto Sans KR', sans-serif;
 
   --fs-hero: clamp(2.6rem, 6vw, 5.6rem);
   --fs-h1: clamp(2.1rem, 4vw, 3.6rem);
@@ -174,7 +176,7 @@ button {
   padding: 15px 30px;
   border-radius: 999px;
   font-weight: 700;
-  font-size: .95rem;
+  font-size: 1rem;
   border: 1.5px solid transparent;
   transition: transform .35s var(--ease-out), background .3s, color .3s, border-color .3s;
   white-space: nowrap;
@@ -223,6 +225,7 @@ button {
   transition: background .4s var(--ease-out), padding .4s var(--ease-out), box-shadow .4s;
 }
 
+
 .site-header .container {
   display: flex;
   align-items: center;
@@ -241,6 +244,10 @@ button {
   backdrop-filter: blur(10px);
   padding: 12px 0;
   box-shadow: 0 1px 0 var(--color-border);
+}
+
+.site-header.scrolled .container {
+  max-width: 100%;
 }
 
 .brand-mark {
@@ -282,7 +289,7 @@ button {
 }
 
 .main-nav a {
-  font-size: .92rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--color-ink);
   position: relative;
@@ -352,7 +359,7 @@ button {
   position: relative;
   min-height: 100svh;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   overflow: hidden;
   justify-content: center;
   color: var(--color-cream);
@@ -382,29 +389,33 @@ button {
 .hero-content {
   padding: 50px;
   position: relative;
-  bottom: 0px;
+  margin: 0 auto;
   z-index: 2;
-  width: 100%;
   display: flex;
+  text-align: center;
+  justify-content: center;
   flex-direction: column;
-  align-items: flex-start;
-  max-width: var(--container-w);
+  align-items: center;
+  max-width: 100%;
   pointer-events: none;
+  background: rgba(0, 0, 0, 0.504);
+  border-radius: 100px;
 }
 
 .hero-eyebrow {
-  font-size: .82rem;
+  font-size: 0.9rem;
   letter-spacing: .22em;
   text-transform: uppercase;
   color: var(--color-cream);
   opacity: .85;
   margin-bottom: 22px;
+  margin-top: 0px;
   font-weight: 600;
 }
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: 3rem;
+  font-size: 3.5rem;
   line-height: 1.12;
   margin: 0 0 24px;
   max-width: 14em;
@@ -416,9 +427,9 @@ button {
 }
 
 .hero-sub {
-  font-size: 1.08rem;
+  font-size: 1.2rem;
   max-width: 34em;
-  line-height: 1.8;
+  line-height: 2;
   color: rgba(247, 242, 232, .88);
   margin-bottom: 40px;
 }
@@ -427,7 +438,6 @@ button {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-  margin-bottom: 56px;
   pointer-events: auto;
 }
 
@@ -558,10 +568,11 @@ button {
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .keyword-row li {
-  padding: 9px 18px;
+  padding: 9px 15px;
   border: 1px solid var(--color-border);
   border-radius: 999px;
   font-size: .82rem;
@@ -729,7 +740,7 @@ button {
 
 .menu-panel.is-active {
   display: grid;
-  align-items: center;
+  align-items: top;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px 34px;
 }
@@ -740,6 +751,8 @@ button {
 }
 
 .menu-item-img {
+  width: 400px;
+  height: 300px;
   border-radius: var(--radius-m);
   overflow: hidden;
   margin-bottom: 18px;
@@ -783,6 +796,8 @@ button {
 }
 
 .menu-item .badge {
+  z-index: 10;
+  position: absolute;
   display: inline-block;
   margin-bottom: 10px;
   font-size: .7rem;
@@ -1483,7 +1498,7 @@ button {
   }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 520px) {
   .masonry {
     column-count: 1;
   }
