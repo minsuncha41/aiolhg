@@ -1483,7 +1483,7 @@ button {
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 410px) {
   .masonry {
     column-count: 1;
   }
@@ -1535,7 +1535,7 @@ button {
 .popup-container {
 
   width: 420px;
-  max-width: 90%;
+  max-width: 80%;
 
   background: #fff;
 
