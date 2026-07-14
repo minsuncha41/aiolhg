@@ -1432,7 +1432,8 @@ button {
 @media (max-width: 860px) {
 
   .main-nav,
-  .header-cta .btn-outline {
+  .header-cta .btn-outline,
+  .header-cta .btn-primary {
     display: none;
   }
 
