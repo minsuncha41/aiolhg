@@ -256,6 +256,7 @@ button {
 .brand-mark {
   display: flex;
   align-items: center;
+  text-align: center;
   gap: 12px;
 }
 
@@ -356,6 +357,7 @@ button {
 .nav-toggle.is-open span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
+
 
 /* ---------- 3. Hero ---------- */
 .hero {
@@ -1529,6 +1531,14 @@ button {
   .main-nav a {
     font-size: 1.4rem;
     font-family: var(--font-display);
+  }
+
+
+
+
+  .brand-mark.is-open {
+    flex-flow: column;
+    text-align: center;
   }
 }
 

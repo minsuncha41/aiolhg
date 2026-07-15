@@ -24,11 +24,13 @@
   /* ---------- 2. 모바일 메뉴 토글 ---------- */
   const navToggle = document.getElementById("navToggle");
   const mainNav = document.getElementById("mainNav");
+  const brandmark = document.getElementById("brand-mark");
 
   function closeNav() {
-    if (!mainNav || !navToggle) return;
+    if (!mainNav || !navToggle || !brandmark) return;
     mainNav.classList.remove("is-open");
     navToggle.classList.remove("is-open");
+    brandmark.classList.remove("is-open");
     navToggle.setAttribute("aria-expanded", "false");
   }
 
@@ -36,6 +38,7 @@
     navToggle.addEventListener("click", function () {
       const isOpen = mainNav.classList.toggle("is-open");
       navToggle.classList.toggle("is-open", isOpen);
+      brandmark.classList.toggle("is-open", isOpen);
       navToggle.setAttribute("aria-expanded", String(isOpen));
     });
 
