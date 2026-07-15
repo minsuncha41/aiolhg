@@ -10,7 +10,7 @@
   const header = document.getElementById("siteHeader");
   function updateHeaderState() {
     if (!header) return;
-    if (window.scrollY > 1000) {
+    if (window.scrollY > 800) {
       header.classList.add("is-scrolled");
       header.classList.remove("scrolled");
     } else {
