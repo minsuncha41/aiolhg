@@ -544,7 +544,7 @@ button {
 .brand-story-media .tag-float {
   position: absolute;
   left: 24px;
-  bottom: 24px;
+  top: 24px;
   background: rgba(247, 242, 232, .92);
   backdrop-filter: blur(6px);
   padding: 14px 20px;
@@ -757,13 +757,10 @@ button {
 
 .menu-item-img {
   width: 100%;
-  max-width: 400px;
-
   height: 300px;
   border-radius: var(--radius-m);
   overflow: hidden;
   margin-bottom: 18px;
-  aspect-ratio: 4/3;
 }
 
 .menu-item-img img {
